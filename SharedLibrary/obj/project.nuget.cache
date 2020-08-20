@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9qwR1HOEaXLvJpuvgNOPM2fa/9FE2qONlkXJsMwmsXA9zE2/0jW/8JHPbhLOGhS0NDtzNzOTbo0bPwVgXpTU/g==",
+  "success": true,
+  "projectFilePath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/SharedLibrary.csproj",
+  "expectedPackageFiles": [
+    "/home/marcioleite/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

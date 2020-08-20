@@ -1,0 +1,5 @@
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Domain\bin\Debug\netstandard2.0\Domain.deps.json
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Domain\bin\Debug\netstandard2.0\Domain.dll
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs

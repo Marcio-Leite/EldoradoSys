@@ -1,0 +1,17 @@
+D:/Projetos ShiftLabs/TeknoTestArchitecture/Domain/bin/Debug/netcoreapp3.1/Domain.deps.json
+D:/Projetos ShiftLabs/TeknoTestArchitecture/Domain/bin/Debug/netcoreapp3.1/Domain.dll
+D:/Projetos ShiftLabs/TeknoTestArchitecture/Domain/bin/Debug/netcoreapp3.1/Domain.pdb
+D:/Projetos ShiftLabs/TeknoTestArchitecture/Domain/obj/Debug/netcoreapp3.1/Domain.AssemblyInfoInputs.cache
+D:/Projetos ShiftLabs/TeknoTestArchitecture/Domain/obj/Debug/netcoreapp3.1/Domain.AssemblyInfo.cs
+D:/Projetos ShiftLabs/TeknoTestArchitecture/Domain/obj/Debug/netcoreapp3.1/Domain.csproj.CoreCompileInputs.cache
+D:/Projetos ShiftLabs/TeknoTestArchitecture/Domain/obj/Debug/netcoreapp3.1/Domain.dll
+D:/Projetos ShiftLabs/TeknoTestArchitecture/Domain/obj/Debug/netcoreapp3.1/Domain.pdb
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/bin/Debug/netcoreapp3.1/Domain.deps.json
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/bin/Debug/netcoreapp3.1/Domain.dll
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/bin/Debug/netcoreapp3.1/Domain.pdb
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/obj/Debug/netcoreapp3.1/Domain.csprojAssemblyReference.cache
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/obj/Debug/netcoreapp3.1/Domain.AssemblyInfoInputs.cache
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/obj/Debug/netcoreapp3.1/Domain.AssemblyInfo.cs
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/obj/Debug/netcoreapp3.1/Domain.csproj.CoreCompileInputs.cache
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/obj/Debug/netcoreapp3.1/Domain.dll
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/obj/Debug/netcoreapp3.1/Domain.pdb

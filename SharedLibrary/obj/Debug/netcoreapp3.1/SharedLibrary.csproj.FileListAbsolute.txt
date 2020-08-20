@@ -1,0 +1,17 @@
+D:/Projetos ShiftLabs/TeknoTestArchitecture/SharedLibrary/bin/Debug/netcoreapp3.1/SharedLibrary.deps.json
+D:/Projetos ShiftLabs/TeknoTestArchitecture/SharedLibrary/bin/Debug/netcoreapp3.1/SharedLibrary.dll
+D:/Projetos ShiftLabs/TeknoTestArchitecture/SharedLibrary/bin/Debug/netcoreapp3.1/SharedLibrary.pdb
+D:/Projetos ShiftLabs/TeknoTestArchitecture/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.AssemblyInfoInputs.cache
+D:/Projetos ShiftLabs/TeknoTestArchitecture/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.AssemblyInfo.cs
+D:/Projetos ShiftLabs/TeknoTestArchitecture/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.csproj.CoreCompileInputs.cache
+D:/Projetos ShiftLabs/TeknoTestArchitecture/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.dll
+D:/Projetos ShiftLabs/TeknoTestArchitecture/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.pdb
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/bin/Debug/netcoreapp3.1/SharedLibrary.deps.json
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/bin/Debug/netcoreapp3.1/SharedLibrary.dll
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/bin/Debug/netcoreapp3.1/SharedLibrary.pdb
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.csprojAssemblyReference.cache
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.AssemblyInfoInputs.cache
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.AssemblyInfo.cs
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.csproj.CoreCompileInputs.cache
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.dll
+/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.pdb

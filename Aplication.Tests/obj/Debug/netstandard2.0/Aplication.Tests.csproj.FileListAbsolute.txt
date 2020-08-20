@@ -1,0 +1,10 @@
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Aplication.Tests\bin\Debug\netstandard2.0\Aplication.Tests.deps.json
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Aplication.Tests\bin\Debug\netstandard2.0\Aplication.Tests.dll
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Aplication.Tests\obj\Debug\netstandard2.0\Aplication.Tests.AssemblyInfoInputs.cache
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Aplication.Tests\obj\Debug\netstandard2.0\Aplication.Tests.AssemblyInfo.cs
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Aplication.Tests\obj\Debug\netstandard2.0\Aplication.Tests.csprojAssemblyReference.cache
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Aplication.Tests\bin\Debug\netstandard2.0\NUnit3.TestAdapter.dll
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Aplication.Tests\bin\Debug\netstandard2.0\NUnit3.TestAdapter.pdb
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Aplication.Tests\bin\Debug\netstandard2.0\nunit.engine.dll
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Aplication.Tests\bin\Debug\netstandard2.0\nunit.engine.api.dll
+D:\Projetos ShiftLabs\TeknoTestArchitecture\Aplication.Tests\bin\Debug\netstandard2.0\nunit.engine.core.dll

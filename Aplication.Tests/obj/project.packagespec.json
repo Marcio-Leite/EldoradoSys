@@ -1,0 +1,70 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Aplication.Tests/Aplication.Tests.csproj",
+    "projectName": "Aplication.Tests",
+    "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Aplication.Tests/Aplication.Tests.csproj",
+    "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Aplication.Tests/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {
+          "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/AccountApp/AccountApp.csproj": {
+            "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/AccountApp/AccountApp.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "[15.8.0, )"
+        },
+        "Moq": {
+          "target": "Package",
+          "version": "[4.14.5, )"
+        },
+        "NUnit": {
+          "target": "Package",
+          "version": "[3.12.0, )"
+        },
+        "NUnit3TestAdapter": {
+          "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[3.13.0, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+    }
+  }
+}
