@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Infra.Map/Infra.Map.csproj": {}
+    "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Infra.Map\\Infra.Map.csproj": {}
   },
   "projects": {
-    "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/Domain.csproj": {
+    "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/Domain.csproj",
+        "projectUniqueName": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/Domain.csproj",
-        "packagesPath": "/home/marcioleite/.nuget/packages/",
-        "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/obj/",
+        "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/marcioleite/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,33 +52,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Infra.Map/Infra.Map.csproj": {
+    "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Infra.Map\\Infra.Map.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Infra.Map/Infra.Map.csproj",
+        "projectUniqueName": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Infra.Map\\Infra.Map.csproj",
         "projectName": "Infra.Map",
-        "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Infra.Map/Infra.Map.csproj",
-        "packagesPath": "/home/marcioleite/.nuget/packages/",
-        "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Infra.Map/obj/",
+        "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Infra.Map\\Infra.Map.csproj",
+        "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Infra.Map\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/marcioleite/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/Domain.csproj": {
-                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/Domain.csproj"
+              "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj"
               }
             }
           }
@@ -114,7 +118,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

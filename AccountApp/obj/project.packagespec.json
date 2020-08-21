@@ -1,31 +1,32 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/AccountApp/AccountApp.csproj",
+    "projectUniqueName": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\AccountApp\\AccountApp.csproj",
     "projectName": "AccountApp",
-    "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/AccountApp/AccountApp.csproj",
-    "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/AccountApp/obj/",
+    "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\AccountApp\\AccountApp.csproj",
+    "outputPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\AccountApp\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
     ],
     "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
       "https://api.nuget.org/v3/index.json": {}
     },
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
-          "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/BaseRepository/BaseRepository.csproj": {
-            "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/BaseRepository/BaseRepository.csproj"
+          "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\BaseRepository\\BaseRepository.csproj": {
+            "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\BaseRepository\\BaseRepository.csproj"
           },
-          "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/Domain.csproj": {
-            "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/Domain.csproj"
+          "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj": {
+            "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj"
           },
-          "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Repository/Repository.csproj": {
-            "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Repository/Repository.csproj"
+          "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Repository\\Repository.csproj": {
+            "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Repository\\Repository.csproj"
           },
-          "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/SharedLibrary.csproj": {
-            "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/SharedLibrary.csproj"
+          "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\SharedLibrary\\SharedLibrary.csproj": {
+            "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\SharedLibrary\\SharedLibrary.csproj"
           }
         }
       }
@@ -53,7 +54,7 @@
           "privateAssets": "all"
         }
       },
-      "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
     }
   }
 }

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\marci\.nuget\packages\nunit3testadapter\3.13.0\build\netcoreapp1.0\nunit.engine.netstandard.dll" t="Include" />
+    <e p="C:\Users\marci\.nuget\packages\nunit3testadapter\3.13.0\build\netcoreapp1.0\NUnit3.TestAdapter.dll" t="Include" />
+    <e p="C:\Users\marci\.nuget\packages\nunit3testadapter\3.13.0\build\netcoreapp1.0\NUnit3.TestAdapter.pdb" t="Include" />
+    <e p="C:\Users\marci\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\marci\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Eldorado.-1045400582.00" t="ExcludeRecursive" />
+    <e p="D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys" t="IncludeFlat">
+      <e p="1-Services" t="Include">
+        <e p="Services.Tests" t="Include" />
+      </e>
+      <e p="2-Application" t="Include">
+        <e p="Application.Tests" t="Include" />
+      </e>
+      <e p="3-Domain" t="Include" />
+      <e p="4-Infra" t="Include">
+        <e p="Infra.Repository" t="Include" />
+        <e p="Shared" t="Include" />
+      </e>
+      <e p="5-Identity" t="Include" />
+      <e p="AccountApp" t="IncludeRecursive">
+        <e p="AccountApp.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="AccountApp.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Service" t="Include">
+          <e p="AccountService.cs" t="Include" />
+          <e p="IAccountService.cs" t="Include" />
+        </e>
+        <e p="UseCases" t="Include">
+          <e p="AccountResponse.cs" t="Include" />
+          <e p="AddAccount" t="Include">
+            <e p="AddAccount.cs" t="Include" />
+            <e p="AddAccountRequestObject.cs" t="Include" />
+            <e p="AddAccountResponseObject.cs" t="Include" />
+          </e>
+        </e>
+        <e p="UseCasesInterfaces" t="Include">
+          <e p="AddAccount" t="Include">
+            <e p="IAddAccount.cs" t="Include" />
+            <e p="IAddAccountRequestObject.cs" t="Include" />
+            <e p="IAddAccountResponseObject.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Aplication.Tests" t="IncludeRecursive">
+        <e p="Account" t="Include">
+          <e p="UseCases" t="Include">
+            <e p="AddAccountTests.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Aplication.Tests.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Aplication.Tests.AssemblyInfo.cs" t="Include" />
+              <e p="Aplication.Tests.Program.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="BaseRepository" t="IncludeRecursive">
+        <e p="BaseRepository" t="Include">
+          <e p="BaseRepository.cs" t="Include" />
+        </e>
+        <e p="BaseRepository.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Interfaces" t="Include">
+          <e p="IRepository.cs" t="Include" />
+          <e p="IUnitOfWork.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="BaseRepository.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Persistence" t="Include">
+          <e p="PersistenceDbContext.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Domain" t="IncludeRecursive">
+        <e p="Account.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Domain.csproj" t="IncludeRecursive" />
+        <e p="Entry.cs" t="Include" />
+        <e p="Identity" t="Include">
+          <e p="Domain" t="Include">
+            <e p="ApplicationRole.cs" t="Include" />
+            <e p="ApplicationUser.cs" t="Include" />
+            <e p="ApplicationUserRole.cs" t="Include" />
+          </e>
+          <e p="Login.cs" t="Include" />
+          <e p="LoginResponse.cs" t="Include" />
+          <e p="Register.cs" t="Include" />
+          <e p="Role.cs" t="Include" />
+          <e p="RoleToUser.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Eldorado.sln" t="IncludeFlat" />
+      <e p="EldoradoService" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="UserController.cs" t="Include" />
+        </e>
+        <e p="EldoradoService.csproj" t="IncludeRecursive" />
+        <e p="Identity" t="Include">
+          <e p="Seetings.cs" t="Include" />
+          <e p="Services" t="Include">
+            <e p="HashingOptions.cs" t="Include" />
+            <e p="PasswordHasher.cs" t="Include" />
+            <e p="TokenService.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20200821024122_inicio.cs" t="Include" />
+          <e p="20200821024122_inicio.Designer.cs" t="Include" />
+          <e p="PersistenceDbContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EldoradoService.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="Infra.Map" t="IncludeRecursive">
+        <e p="AccountMap.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Infra.Map.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Infra.Map.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Repository" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Interfaces" t="Include">
+          <e p="IAccountRepository.cs" t="Include" />
+          <e p="IRoleRepository.cs" t="Include" />
+          <e p="IUserRepository.cs" t="Include" />
+          <e p="IUserRoleRepository.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Repository.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repository" t="Include">
+          <e p="AccountRepository.cs" t="Include" />
+          <e p="RoleRepository.cs" t="Include" />
+          <e p="UserRepository.cs" t="Include" />
+          <e p="UserRoleRepository.cs" t="Include" />
+        </e>
+        <e p="Repository.csproj" t="IncludeRecursive" />
+        <e p="UnitOfWork" t="Include">
+          <e p="UnitOfWork.cs" t="Include" />
+        </e>
+      </e>
+      <e p="SharedLibrary" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="IResponse.cs" t="Include" />
+        <e p="IValidator.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="SharedLibrary.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SharedLibrary.csproj" t="IncludeRecursive" />
+        <e p="ValidationNotification.cs" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>

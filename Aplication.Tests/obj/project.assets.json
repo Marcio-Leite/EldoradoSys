@@ -7635,31 +7635,33 @@
     ]
   },
   "packageFolders": {
-    "/home/marcioleite/.nuget/packages/": {}
+    "C:\\Users\\marci\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Aplication.Tests/Aplication.Tests.csproj",
+      "projectUniqueName": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Aplication.Tests\\Aplication.Tests.csproj",
       "projectName": "Aplication.Tests",
-      "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Aplication.Tests/Aplication.Tests.csproj",
-      "packagesPath": "/home/marcioleite/.nuget/packages/",
-      "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Aplication.Tests/obj/",
+      "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Aplication.Tests\\Aplication.Tests.csproj",
+      "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
+      "outputPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Aplication.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/marcioleite/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/AccountApp/AccountApp.csproj": {
-              "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/AccountApp/AccountApp.csproj"
+            "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\AccountApp\\AccountApp.csproj": {
+              "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\AccountApp\\AccountApp.csproj"
             }
           }
         }
@@ -7707,7 +7709,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

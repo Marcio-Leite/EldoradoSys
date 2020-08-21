@@ -22,3 +22,15 @@ D:/Projetos ShiftLabs/TeknoTestArchitecture/Infra.Map/obj/Debug/netcoreapp3.1/In
 /home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Infra.Map/obj/Debug/netcoreapp3.1/Infra.Map.csproj.CopyComplete
 /home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Infra.Map/obj/Debug/netcoreapp3.1/Infra.Map.dll
 /home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Infra.Map/obj/Debug/netcoreapp3.1/Infra.Map.pdb
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Infra.Map\bin\Debug\netcoreapp3.1\Infra.Map.deps.json
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Infra.Map\bin\Debug\netcoreapp3.1\Infra.Map.dll
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Infra.Map\bin\Debug\netcoreapp3.1\Infra.Map.pdb
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Infra.Map\bin\Debug\netcoreapp3.1\Domain.dll
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Infra.Map\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Infra.Map\obj\Debug\netcoreapp3.1\Infra.Map.csprojAssemblyReference.cache
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Infra.Map\obj\Debug\netcoreapp3.1\Infra.Map.AssemblyInfoInputs.cache
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Infra.Map\obj\Debug\netcoreapp3.1\Infra.Map.AssemblyInfo.cs
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Infra.Map\obj\Debug\netcoreapp3.1\Infra.Map.csproj.CoreCompileInputs.cache
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Infra.Map\obj\Debug\netcoreapp3.1\Infra.Map.csproj.CopyComplete
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Infra.Map\obj\Debug\netcoreapp3.1\Infra.Map.dll
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Infra.Map\obj\Debug\netcoreapp3.1\Infra.Map.pdb

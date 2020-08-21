@@ -15,3 +15,12 @@ D:/Projetos ShiftLabs/TeknoTestArchitecture/Domain/obj/Debug/netcoreapp3.1/Domai
 /home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/obj/Debug/netcoreapp3.1/Domain.csproj.CoreCompileInputs.cache
 /home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/obj/Debug/netcoreapp3.1/Domain.dll
 /home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/Domain/obj/Debug/netcoreapp3.1/Domain.pdb
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Domain\bin\Debug\netcoreapp3.1\Domain.dll
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Domain\obj\Debug\netcoreapp3.1\Domain.dll
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\Domain\obj\Debug\netcoreapp3.1\Domain.pdb

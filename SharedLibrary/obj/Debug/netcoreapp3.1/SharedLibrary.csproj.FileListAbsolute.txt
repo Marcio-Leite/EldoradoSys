@@ -15,3 +15,12 @@ D:/Projetos ShiftLabs/TeknoTestArchitecture/SharedLibrary/obj/Debug/netcoreapp3.
 /home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.csproj.CoreCompileInputs.cache
 /home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.dll
 /home/marcioleite/Repos/Projetos ShiftLabs/Eldorado/SharedLibrary/obj/Debug/netcoreapp3.1/SharedLibrary.pdb
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\SharedLibrary\bin\Debug\netcoreapp3.1\SharedLibrary.deps.json
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\SharedLibrary\bin\Debug\netcoreapp3.1\SharedLibrary.dll
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\SharedLibrary\bin\Debug\netcoreapp3.1\SharedLibrary.pdb
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\SharedLibrary\obj\Debug\netcoreapp3.1\SharedLibrary.csprojAssemblyReference.cache
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\SharedLibrary\obj\Debug\netcoreapp3.1\SharedLibrary.AssemblyInfoInputs.cache
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\SharedLibrary\obj\Debug\netcoreapp3.1\SharedLibrary.AssemblyInfo.cs
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\SharedLibrary\obj\Debug\netcoreapp3.1\SharedLibrary.csproj.CoreCompileInputs.cache
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\SharedLibrary\obj\Debug\netcoreapp3.1\SharedLibrary.dll
+D:\Projetos ShiftLabs\EldoradoSys\EldoradoSys\SharedLibrary\obj\Debug\netcoreapp3.1\SharedLibrary.pdb
