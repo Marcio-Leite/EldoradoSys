@@ -19,6 +19,17 @@ namespace EldoradoService.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Domain.Cronograma", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cronogramas");
+                });
+
             modelBuilder.Entity("Domain.Identity.Domain.ApplicationRole", b =>
                 {
                     b.Property<Guid>("ApplicationRoleId")
@@ -80,6 +91,164 @@ namespace EldoradoService.Migrations
                     b.ToTable("ApplicationUserRoles");
                 });
 
+            modelBuilder.Entity("Domain.Imagem", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Capa")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("IdObra")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("ObraId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("UrlImagem")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ObraId");
+
+                    b.ToTable("Imagens");
+                });
+
+            modelBuilder.Entity("Domain.ItemCronograma", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("CronogramaId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("DescricaoAtividade")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FimAtividade")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("InicioAtividade")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("ObraId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Responsavel")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("StatusItem")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CronogramaId");
+
+                    b.HasIndex("ObraId");
+
+                    b.ToTable("ItensCronograma");
+                });
+
+            modelBuilder.Entity("Domain.Obra", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DataCriacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataEntregaEmpreendimento")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataInicioObras")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataUltimaModificacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataValidadeGarantia")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DescricaoObra")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("PorcentagemParticipacao")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("StatusObra")
+                        .HasColumnType("int");
+
+                    b.Property<Guid?>("TerrenoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("ValorTotalAquisicao")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TerrenoId");
+
+                    b.ToTable("Obras");
+                });
+
+            modelBuilder.Entity("Domain.Socio", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Documento")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("ObraId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ObraId");
+
+                    b.ToTable("Socios");
+                });
+
+            modelBuilder.Entity("Domain.Terreno", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DataAquisicao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EnderecoCompleto")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Latitude")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Longitude")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("MetragemTerreno")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Terrenos");
+                });
+
             modelBuilder.Entity("Domain.Identity.Domain.ApplicationUserRole", b =>
                 {
                     b.HasOne("Domain.Identity.Domain.ApplicationRole", "ApplicationRole")
@@ -93,6 +262,38 @@ namespace EldoradoService.Migrations
                         .HasForeignKey("ApplicationUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Domain.Imagem", b =>
+                {
+                    b.HasOne("Domain.Obra", "Obra")
+                        .WithMany("Imagens")
+                        .HasForeignKey("ObraId");
+                });
+
+            modelBuilder.Entity("Domain.ItemCronograma", b =>
+                {
+                    b.HasOne("Domain.Cronograma", null)
+                        .WithMany("ItensCronograma")
+                        .HasForeignKey("CronogramaId");
+
+                    b.HasOne("Domain.Obra", null)
+                        .WithMany("Cronograma")
+                        .HasForeignKey("ObraId");
+                });
+
+            modelBuilder.Entity("Domain.Obra", b =>
+                {
+                    b.HasOne("Domain.Terreno", "Terreno")
+                        .WithMany()
+                        .HasForeignKey("TerrenoId");
+                });
+
+            modelBuilder.Entity("Domain.Socio", b =>
+                {
+                    b.HasOne("Domain.Obra", null)
+                        .WithMany("Socios")
+                        .HasForeignKey("ObraId");
                 });
 #pragma warning restore 612, 618
         }

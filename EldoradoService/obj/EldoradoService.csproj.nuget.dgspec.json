@@ -1,37 +1,101 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\EldoradoService\\EldoradoService.csproj": {}
+    "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/EldoradoService/EldoradoService.csproj": {}
   },
   "projects": {
-    "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\BaseRepository\\BaseRepository.csproj": {
+    "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\BaseRepository\\BaseRepository.csproj",
-        "projectName": "BaseRepository",
-        "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\BaseRepository\\BaseRepository.csproj",
-        "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\BaseRepository\\obj\\",
+        "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/Application.csproj",
+        "packagesPath": "/home/marcioleite/.nuget/packages/",
+        "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/marcioleite/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj"
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/BaseRepository.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/BaseRepository.csproj"
               },
-              "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Infra.Map\\Infra.Map.csproj": {
-                "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Infra.Map\\Infra.Map.csproj"
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj"
+              },
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/Repository.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/Repository.csproj"
+              },
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/SharedLibrary/SharedLibrary.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/SharedLibrary/SharedLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/BaseRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/BaseRepository.csproj",
+        "projectName": "BaseRepository",
+        "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/BaseRepository.csproj",
+        "packagesPath": "/home/marcioleite/.nuget/packages/",
+        "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/marcioleite/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj"
+              },
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Infra.Map/Infra.Map.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Infra.Map/Infra.Map.csproj"
               }
             }
           }
@@ -81,28 +145,86 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj": {
+    "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/DependencyInjection/DependencyInjection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\obj\\",
+        "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/DependencyInjection/DependencyInjection.csproj",
+        "projectName": "DependencyInjection",
+        "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/DependencyInjection/DependencyInjection.csproj",
+        "packagesPath": "/home/marcioleite/.nuget/packages/",
+        "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/DependencyInjection/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/marcioleite/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/Application.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/Application.csproj"
+              },
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/Repository.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj",
+        "packagesPath": "/home/marcioleite/.nuget/packages/",
+        "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/marcioleite/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -133,41 +255,45 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\EldoradoService\\EldoradoService.csproj": {
+    "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/EldoradoService/EldoradoService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\EldoradoService\\EldoradoService.csproj",
+        "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/EldoradoService/EldoradoService.csproj",
         "projectName": "EldoradoService",
-        "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\EldoradoService\\EldoradoService.csproj",
-        "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\EldoradoService\\obj\\",
+        "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/EldoradoService/EldoradoService.csproj",
+        "packagesPath": "/home/marcioleite/.nuget/packages/",
+        "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/EldoradoService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/marcioleite/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\BaseRepository\\BaseRepository.csproj": {
-                "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\BaseRepository\\BaseRepository.csproj"
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/Application.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/Application.csproj"
               },
-              "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj"
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/BaseRepository.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/BaseRepository.csproj"
               },
-              "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Repository\\Repository.csproj": {
-                "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Repository\\Repository.csproj"
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/DependencyInjection/DependencyInjection.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/DependencyInjection/DependencyInjection.csproj"
+              },
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj"
+              },
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/Repository.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/Repository.csproj"
               }
             }
           }
@@ -228,35 +354,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Infra.Map\\Infra.Map.csproj": {
+    "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Infra.Map/Infra.Map.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Infra.Map\\Infra.Map.csproj",
+        "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Infra.Map/Infra.Map.csproj",
         "projectName": "Infra.Map",
-        "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Infra.Map\\Infra.Map.csproj",
-        "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Infra.Map\\obj\\",
+        "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Infra.Map/Infra.Map.csproj",
+        "packagesPath": "/home/marcioleite/.nuget/packages/",
+        "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Infra.Map/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/marcioleite/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj"
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj"
               }
             }
           }
@@ -294,35 +418,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Repository\\Repository.csproj": {
+    "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Repository\\Repository.csproj",
+        "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Repository\\obj\\",
+        "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/Repository.csproj",
+        "packagesPath": "/home/marcioleite/.nuget/packages/",
+        "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/marcioleite/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\BaseRepository\\BaseRepository.csproj": {
-                "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\BaseRepository\\BaseRepository.csproj"
+              "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/BaseRepository.csproj": {
+                "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/BaseRepository.csproj"
               }
             }
           }
@@ -335,6 +457,79 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.1.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/SharedLibrary/SharedLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/SharedLibrary/SharedLibrary.csproj",
+        "projectName": "SharedLibrary",
+        "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/SharedLibrary/SharedLibrary.csproj",
+        "packagesPath": "/home/marcioleite/.nuget/packages/",
+        "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/SharedLibrary/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/marcioleite/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -350,7 +545,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     }

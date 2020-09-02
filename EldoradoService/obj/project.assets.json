@@ -318,6 +318,15 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
+      "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/_._": {}
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/3.1.4": {
         "type": "package",
         "dependencies": {
@@ -447,7 +456,7 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.4": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.7": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
@@ -674,6 +683,15 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Microsoft.OpenApi/1.1.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
+        }
+      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -726,7 +744,7 @@
           }
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -992,6 +1010,60 @@
         "runtime": {
           "lib/netcoreapp2.1/ServiceStack.Text.dll": {}
         }
+      },
+      "Swashbuckle.AspNetCore/5.3.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
+          "Swashbuckle.AspNetCore.Swagger": "5.3.3",
+          "Swashbuckle.AspNetCore.SwaggerGen": "5.3.3",
+          "Swashbuckle.AspNetCore.SwaggerUI": "5.3.3"
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/5.3.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/5.3.3": {
+        "type": "package",
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "5.3.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/5.3.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "System.Buffers/4.5.0": {
         "type": "package",
@@ -2535,6 +2607,25 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "BaseRepository": "1.0.0",
+          "Domain": "1.0.0",
+          "Repository": "1.0.0",
+          "SharedLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "BaseRepository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2553,6 +2644,23 @@
         "runtime": {
           "bin/placeholder/BaseRepository.dll": {}
         }
+      },
+      "DependencyInjection/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Application": "1.0.0",
+          "Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DependencyInjection.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Domain/1.0.0": {
         "type": "project",
@@ -2583,13 +2691,32 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "BaseRepository": "1.0.0"
+          "BaseRepository": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.7",
+          "Microsoft.OpenApi": "1.1.4",
+          "Swashbuckle.AspNetCore": "5.3.3"
         },
         "compile": {
           "bin/placeholder/Repository.dll": {}
         },
         "runtime": {
           "bin/placeholder/Repository.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "SharedLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "bin/placeholder/SharedLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharedLibrary.dll": {}
         }
       }
     }
@@ -3015,6 +3142,33 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
+    "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
+      "sha512": "LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
+      "type": "package",
+      "path": "microsoft.extensions.apidescription.server/3.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.Extensions.ApiDescription.Server.props",
+        "build/Microsoft.Extensions.ApiDescription.Server.targets",
+        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props",
+        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets",
+        "microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+        "microsoft.extensions.apidescription.server.nuspec",
+        "tools/Newtonsoft.Json.dll",
+        "tools/dotnet-getdocument.deps.json",
+        "tools/dotnet-getdocument.dll",
+        "tools/dotnet-getdocument.runtimeconfig.json",
+        "tools/net461-x86/GetDocument.Insider.exe",
+        "tools/net461-x86/GetDocument.Insider.exe.config",
+        "tools/net461/GetDocument.Insider.exe",
+        "tools/net461/GetDocument.Insider.exe.config",
+        "tools/netcoreapp2.1/GetDocument.Insider.deps.json",
+        "tools/netcoreapp2.1/GetDocument.Insider.dll",
+        "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
+      ]
+    },
     "Microsoft.Extensions.Caching.Abstractions/3.1.4": {
       "sha512": "gwJ44A/NSXC6GTqyBpIJU/nP0bRuKEL6WXMWV5bANWZUj/5nRs8CzdMpylK2K8Wc6cr87uvlNl7O5seU2WaclA==",
       "type": "package",
@@ -3169,17 +3323,17 @@
         "microsoft.extensions.dependencyinjection.nuspec"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.4": {
-      "sha512": "AceHamXNKDMDwIoZqEoApLp8s3935wSC3VXrPaRWa0wWOaEcYdDlo1nWQ1zLiezoDmpJzV7FqDm53E0Ty/hEMg==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.7": {
+      "sha512": "oKL2yNtTN1/cOp+cbdyv5TeLzO+GkO9B3fvbcPzKWTNCkDoH3ccYS3FWC1p4KSYe9frW4WsyfSTeM8X+xftOig==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.4",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.3.1.4.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.3.1.7.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
@@ -3500,6 +3654,23 @@
         "runtime.json"
       ]
     },
+    "Microsoft.OpenApi/1.1.4": {
+      "sha512": "6SW0tpbJslc8LAY1XniRfLVcJa7bJUbbwvo2/ZRqfkMbJrsqIj9045vg3STtZhDhYRKhpYgjqGU11eeW4Pzyrg==",
+      "type": "package",
+      "path": "microsoft.openapi/1.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/Microsoft.OpenApi.dll",
+        "lib/net46/Microsoft.OpenApi.pdb",
+        "lib/net46/Microsoft.OpenApi.xml",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.1.4.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
     "Microsoft.Win32.Primitives/4.3.0": {
       "sha512": "9ZQKCWxH7Ijp9BfahvL2Zyf1cJIk8XYLF6Yjzr2yi0b2cOut/HQ31qf1ThHAgCc3WiZMdnWcfJCgN82/0UunxA==",
       "type": "package",
@@ -3614,10 +3785,10 @@
         "version.txt"
       ]
     },
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/11.0.2",
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3640,8 +3811,9 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -3919,6 +4091,63 @@
         "lib/netstandard2.0/ServiceStack.Text.xml",
         "servicestack.text.core.5.8.0.nupkg.sha512",
         "servicestack.text.core.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore/5.3.3": {
+      "sha512": "5lxbFdRq6V7ohRrbHp+XjpNkwvZfKCyba47iJ52KhjkLd3uLMMaNQQGFgpvsgoWE2AG9y2zm8qLaRQmntXmahA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore/5.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Swashbuckle.AspNetCore.props",
+        "swashbuckle.aspnetcore.5.3.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Swagger/5.3.3": {
+      "sha512": "AKLJib3neW+7cRh5uPemXRlCu/w+Tsj1dtV6hV/jVp+/T0GYOXDMbuafSI18ZHRVt2AL7mlh9H8CjJv9NOXXdg==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swagger/5.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "swashbuckle.aspnetcore.swagger.5.3.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/5.3.3": {
+      "sha512": "px+bosREjIwbyknYoOmYN2+ygaBBeK73IrKY0MN7TORd/nEyX2boKPfKTvo4HJWH3tPtSHFXvo2TttDgCaCx7A==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggergen/5.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "swashbuckle.aspnetcore.swaggergen.5.3.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/5.3.3": {
+      "sha512": "eWzYYfp1Y2Qzf7UtzfA863NBdIAFjNXl7tLGejTJ+KU+omWzRf5SLc7HLQk61MGMhs2N2fwNPGK7THx/KzhqvQ==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggerui/5.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "swashbuckle.aspnetcore.swaggerui.5.3.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
     "System.Buffers/4.5.0": {
@@ -8448,10 +8677,20 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
     "BaseRepository/1.0.0": {
       "type": "project",
       "path": "../BaseRepository/BaseRepository.csproj",
       "msbuildProject": "../BaseRepository/BaseRepository.csproj"
+    },
+    "DependencyInjection/1.0.0": {
+      "type": "project",
+      "path": "../DependencyInjection/DependencyInjection.csproj",
+      "msbuildProject": "../DependencyInjection/DependencyInjection.csproj"
     },
     "Domain/1.0.0": {
       "type": "project",
@@ -8467,11 +8706,18 @@
       "type": "project",
       "path": "../Repository/Repository.csproj",
       "msbuildProject": "../Repository/Repository.csproj"
+    },
+    "SharedLibrary/1.0.0": {
+      "type": "project",
+      "path": "../SharedLibrary/SharedLibrary.csproj",
+      "msbuildProject": "../SharedLibrary/SharedLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Application >= 1.0.0",
       "BaseRepository >= 1.0.0",
+      "DependencyInjection >= 1.0.0",
       "Domain >= 1.0.0",
       "Microsoft.Data.SqlClient >= 2.0.0",
       "Microsoft.EntityFrameworkCore >= 3.1.4",
@@ -8484,39 +8730,43 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marci\\.nuget\\packages\\": {}
+    "/home/marcioleite/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\EldoradoService\\EldoradoService.csproj",
+      "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/EldoradoService/EldoradoService.csproj",
       "projectName": "EldoradoService",
-      "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\EldoradoService\\EldoradoService.csproj",
-      "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\EldoradoService\\obj\\",
+      "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/EldoradoService/EldoradoService.csproj",
+      "packagesPath": "/home/marcioleite/.nuget/packages/",
+      "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/EldoradoService/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/marcioleite/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\BaseRepository\\BaseRepository.csproj": {
-              "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\BaseRepository\\BaseRepository.csproj"
+            "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/Application.csproj": {
+              "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/Application.csproj"
             },
-            "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Domain\\Domain.csproj"
+            "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/BaseRepository.csproj": {
+              "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/BaseRepository.csproj"
             },
-            "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Repository\\Repository.csproj": {
-              "projectPath": "D:\\Projetos ShiftLabs\\EldoradoSys\\EldoradoSys\\Repository\\Repository.csproj"
+            "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/DependencyInjection/DependencyInjection.csproj": {
+              "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/DependencyInjection/DependencyInjection.csproj"
+            },
+            "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj": {
+              "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj"
+            },
+            "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/Repository.csproj": {
+              "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/Repository.csproj"
             }
           }
         }
@@ -8577,7 +8827,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
       }
     }
   }

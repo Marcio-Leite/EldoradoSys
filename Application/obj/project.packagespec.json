@@ -1,0 +1,59 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/Application.csproj",
+    "projectName": "Application",
+    "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/Application.csproj",
+    "outputPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {
+          "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/BaseRepository.csproj": {
+            "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/BaseRepository/BaseRepository.csproj"
+          },
+          "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj": {
+            "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Domain/Domain.csproj"
+          },
+          "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/Repository.csproj": {
+            "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Repository/Repository.csproj"
+          },
+          "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/SharedLibrary/SharedLibrary.csproj": {
+            "projectPath": "/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/SharedLibrary/SharedLibrary.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+    }
+  }
+}

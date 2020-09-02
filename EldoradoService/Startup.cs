@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BaseRepository.Persistence;
+using DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +32,9 @@ namespace EldoradoService
             services.AddDbContext<PersistenceDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")
                     , b => b.MigrationsAssembly("EldoradoService")));
+            
+            AddStartup.AddDependencyInjection(services);
+            AddStartup.AddSwaggerAndDependencies(services,"Eldorado Service", "v1", "Eldorado Routes for projects", Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +52,9 @@ namespace EldoradoService
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            
+            // Ativando middlewares para uso do Swagger
+            AddStartup.AddSwaggerAndSecurityToApp(app);
         }
     }
 }

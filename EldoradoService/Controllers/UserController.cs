@@ -43,7 +43,7 @@ namespace EldoradoService.Controllers
         public async Task<ActionResult<dynamic>> Login([FromBody]Register.LoginEntity user)
         {
             bool needRehash;
-            var userDbSearch = await _userRepository.Query("UserName = @Email", new {Email = user.Email});
+            var userDbSearch = await _userRepository.Query("UserName = @0",  user.Email);
 
             var userDb = userDbSearch.FirstOrDefault();
             bool passwordIsCorrect = hash.VerifyPassword(userDb.Password, user.Password, out needRehash);
@@ -51,7 +51,7 @@ namespace EldoradoService.Controllers
             if (!userDbSearch.Any() || !passwordIsCorrect)
                 return NotFound(new { message = "Usuário ou senha inválidos" });
             
-            var userRolesDb = (await _userRoleRepository.Query("ApplicationUserId = @ApplicationUserId", new {ApplicationUserId = userDb.ApplicationUserId})).ToList();
+            var userRolesDb = (await _userRoleRepository.Query("ApplicationUserId = @0", userDb.ApplicationUserId.ToString())).ToList();
             var roles = new List<ApplicationRole>();
             foreach (var rolesFind in userRolesDb)
             {
@@ -78,10 +78,10 @@ namespace EldoradoService.Controllers
             
             if (userId == null || expirationTime == null) return NotFound(new { message = "Token informado inválido" });
             
-            var userDb = (await _userRepository.Query("id = @UserId", new {UsrId = userId.Value})).FirstOrDefault();
+            var userDb = (await _userRepository.Query("id = @0", userId.Value)).FirstOrDefault();
             
-            var userRolesDb = await _userRoleRepository.Query("ApplicationUserId = @ApplicationUserId", 
-                new {ApplicationUserId = userDb.ApplicationUserId});
+            var userRolesDb = await _userRoleRepository.Query("ApplicationUserId = @0", 
+                userDb.ApplicationUserId.ToString());
             var roles = new List<ApplicationRole>();
             foreach (var rolesFind in userRolesDb)
             {
@@ -101,7 +101,7 @@ namespace EldoradoService.Controllers
             var newRole = new ApplicationRole(role.Name);
 
             var roleExists =
-                await _roleRepository.Query("name = @Name", new {Name = role.Name});
+                await _roleRepository.Query("name = @0", role.Name);
 
             if (roleExists.Any())
                 return BadRequest("Role " + role.Name + " já registrado.");
@@ -127,8 +127,8 @@ namespace EldoradoService.Controllers
                 return BadRequest("Ids informados incorretos.");
 
             var verifyExists = (await _userRoleRepository.Query(
-                    "ApplicationUserId = @ApplicationUserId and ApplicationRoleId = @ApplicationRoleId", 
-                    new {ApplicationUserId = user.ApplicationUserId, ApplicationRoleId = role.ApplicationRoleId}))
+                    "ApplicationUserId = @0 and ApplicationRoleId = @1", 
+                    new List<string> {user.ApplicationUserId.ToString(), role.ApplicationRoleId.ToString()}))
                 .Any();
             
             if (verifyExists)
@@ -167,13 +167,13 @@ namespace EldoradoService.Controllers
 
                     var userExists =
                         //await _uow.UserRepository.Query($"UserName = '{model.Email}'");
-                        await _userRepository.Query("UserName = @Email", new {Email = model.Email});
+                        await _userRepository.Query("UserName = @0",model.Email);
 
                     if (userExists.Any())
                         return BadRequest("E-mail " + model.Email + " já registrado.");
 
                     var defaultRole = _configuration.GetValue<string>("DefaultRole");
-                    var roleDb = await _roleRepository.Query("Name = @Name", new {Name = defaultRole});
+                    var roleDb = await _roleRepository.Query("Name = @0", defaultRole);
                     _userRepository.Add(userDb);
                     _userRoleRepository.Add(new ApplicationUserRole(userDb, roleDb.FirstOrDefault()));
 

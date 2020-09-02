@@ -1,0 +1,4 @@
+/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/obj/Debug/netcoreapp3.1/Application.csprojAssemblyReference.cache
+/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/obj/Debug/netcoreapp3.1/Application.AssemblyInfoInputs.cache
+/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/obj/Debug/netcoreapp3.1/Application.AssemblyInfo.cs
+/home/marcioleite/Repos/Projetos ShiftLabs/EldoradoSys/EldoradoSys/Application/obj/Debug/netcoreapp3.1/Application.csproj.CoreCompileInputs.cache
